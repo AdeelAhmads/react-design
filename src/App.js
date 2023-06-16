@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header';
 import Availability from './components/checkAvailablilty';
 import Subscribe from './components/subscribe';
+import InfoSection from './components/infoSection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header></Header>
       <Availability></Availability>
       <Subscribe />
+      <InfoSection />
     </div>
   );
 }
