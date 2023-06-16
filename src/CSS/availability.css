@@ -1,0 +1,82 @@
+
+
+#avilablilty{
+    background: url('../assets/img/bg-img-1.jpg');
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 2px;
+}
+.first-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.first-row-input{
+    outline: none;
+    width: 200px;
+    height: 30px;
+    border:0.5px solid #aaa;
+    border-radius: 2px;
+
+}
+.first-row-input::placeholder{
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+
+.second-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-row-input{
+    margin-top: 10px;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    border:0.5px solid #aaa;
+    border-radius: 2px;
+}
+
+input[type='submit']{
+    margin-top: 10px;
+    border: none;
+   color: black;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 10px;
+   cursor: pointer;
+   font-weight:bold;
+   background-color: #fd5e53;
+   color: white;
+    
+
+}
+input[type='submit']:hover {
+    background-color: #ec2f22;
+}
+
+.third-row{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.link{
+    text-decoration: none !important;
+    color: #ec2f22;
+}
