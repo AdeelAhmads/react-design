@@ -35,7 +35,9 @@
     font-size: 10px;
 }
 #subs-btn:hover{
-    background-color: #ec2f22;
+    background-color: white;
+    border-bottom: white solid;
+    color: #fd5e53;
     cursor: pointer;
     
 }

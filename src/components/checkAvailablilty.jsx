@@ -10,7 +10,7 @@ const Availability=()=>{
             <div id='form'>
 
          
-            <form onSubmit={validate}>
+            <form className='availabilityForm' onSubmit={validate}>
 
                 <div className='first-row'>
                 <section  id="destination" style={{marginRight:'5px'}}>

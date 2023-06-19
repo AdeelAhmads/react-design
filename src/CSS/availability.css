@@ -9,12 +9,15 @@
 }
 
 
-form{
+.availabilityForm{
+    width: 95%;
     background-color: white;
     padding: 20px;
     border-radius: 2px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .first-row{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,11 +29,16 @@ form{
     height: 30px;
     border:0.5px solid #aaa;
     border-radius: 2px;
+    
 
 }
 .first-row-input::placeholder{
     font-size: 12px;
     padding: 5px;
+}
+.first-row-input:focus{
+    
+    box-shadow: rgba(253, 94, 83, 0.4) 0px 0px 0px 2px;
 }
 
 
@@ -48,11 +56,14 @@ form{
     border:0.5px solid #aaa;
     border-radius: 2px;
 }
+.second-row-input:focus{
+    box-shadow: rgba(253, 94, 83, 0.4) 0px 0px 0px 2px;
+
+}
 
 input[type='submit']{
     margin-top: 10px;
     border: none;
-   color: black;
    padding: 10px 25px;
    text-align: center;
    text-decoration: none;

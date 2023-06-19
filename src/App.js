@@ -4,6 +4,11 @@ import Header from './components/header';
 import Availability from './components/checkAvailablilty';
 import Subscribe from './components/subscribe';
 import InfoSection from './components/infoSection';
+import RecommmendSection from './components/recommendSection';
+import VideoSection from './components/videoSection';
+import CountryInfo from './components/countryInfo';
+import MessageSection from './components/sendMessageSection';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -12,6 +17,11 @@ function App() {
       <Availability></Availability>
       <Subscribe />
       <InfoSection />
+      <RecommmendSection />
+      <VideoSection />
+      <CountryInfo />
+      <MessageSection />
+      <Footer />
     </div>
   );
 }

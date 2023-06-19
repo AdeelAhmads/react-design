@@ -1,0 +1,134 @@
+.recommendSection{
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.main-section {
+    padding-top:50px;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.details{
+    margin-right: 20px;
+    width: 70%;
+    height: 428px;
+    /* border: 1px solid red; */
+
+}
+.recommendPlace{
+    width: 30%;
+    height: 460px;
+    /* border: 1px solid red; */
+}
+.recommend-header{
+    background-color: #fd5e53;
+    color: white;
+    height: 70px;
+
+}
+.recommend-header > div{
+    padding: 10px;
+    background-color: #fd5e53;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.recommend-header > p{
+    padding: 10px;
+    font-size: 12px;
+    margin-top: -10px;
+    color: #F5F5F5;
+}
+
+/* .recommendPlace{
+   
+   
+  
+
+} */
+.recommend{
+    padding: 20px;  
+    background-color: white;
+    height: 320px;
+}
+.recommend > section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #F5F5F5;
+
+}
+.recommend > section:hover{
+    background-color: #c1c1c1;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.recommend > section > img{
+    width: 70px;
+    height: 70px;
+}
+.recommend > section > h5{
+    padding-left: 15px;
+}
+.place-img > img{
+   width: 100%;
+    height: 220px;
+}
+.place-info{
+    padding: 15px;
+}
+.place-title{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.place-title2{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.place{
+    background-color: white;
+  
+}
+
+.place_btn{
+   
+    border: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+   width: 90%;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 10px;
+   cursor: pointer;
+   font-weight:bold;
+   background-color: #fd5e53;
+   color: white;
+   /* margin-left: 10 */
+   margin-bottom: 14px;
+    
+
+}
+.place_btn:hover {
+    background-color: #ec2f22;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: #ec2f22;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: #fd5e53;
+    width: 0.5rem !important;
+    height:0.5rem !important;
+    margin-top: 2rem !important;
+  }
