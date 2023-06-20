@@ -1,32 +1,50 @@
-import tree from '../assets/tree.svg';
-import '../CSS/header.css'
-
+import '../CSS/header.css';
+import logo from '../logo.png'
 const Header=()=>{
 
+   
+       function Hamburger(){
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+    }
+      
+    
+
     return(
-
-        <div id='header'>
-           <header className='main-header' >
+        <div>
+         <header className='main-header'>
+        <div className="header-left">
+            <div className="logo">
+                <img src={logo} alt="" />
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" className="active">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="">BLOG ENTRIES</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT US</a>
+                    </li>
+                   
+                </ul>
                
-               <section className='brand'>
-               <a href="#Home" className='icon' ><img className='logo-img'  style={{height:'70%', color:'white'}} src={tree}  alt="" /></a><h4>Level</h4>
-               </section>
-               <div className="nav-bar">
-                <a href="#avilablilty" className='header-btn active'  style={{ backgroundColor: '#fd5e53',color:'white'}}>HOME</a>
-               <a href="#infoSection" className='header-btn'>PORTFOLIO</a>
-               <a href="#coutryInfo" className='header-btn'>BLOG ENTRIES</a>
-               <a href="#message-section" className='header-btn'>CONTACT US</a>
-               </div>
-              
-               <div className="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-
-
-        </header>
+            </nav>
         </div>
-    );
+        <div className="header-right">
+            <div className="hamburger" onClick={Hamburger}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+        </div>
+    )
 }
 export default Header;

@@ -1,6 +1,7 @@
 
 
 #avilablilty{
+    width:100%;
     background: url('../assets/img/bg-img-1.jpg');
     height: 400px;
     display: flex;
@@ -10,10 +11,11 @@
 
 
 .availabilityForm{
+    box-sizing: border-box;
     width: 95%;
     background-color: white;
-    padding: 20px;
-    border-radius: 2px;
+    padding: 30px;
+    /* border-radius: 2px; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .first-row{
@@ -27,8 +29,8 @@
     outline: none;
     width: 200px;
     height: 30px;
-    border:0.5px solid #aaa;
-    border-radius: 2px;
+    border:2px solid 	rgba(170,170,170,0.5);
+    /* border-radius: 2px;/ */
     
 
 }
@@ -38,7 +40,10 @@
 }
 .first-row-input:focus{
     
-    box-shadow: rgba(253, 94, 83, 0.4) 0px 0px 0px 2px;
+    border:2px solid rgba(253, 94, 83, 0.4);
+}
+.first-row-input:hover{
+    border:2px solid rgba(253, 94, 83, 0.4);
 }
 
 
@@ -51,20 +56,22 @@
 .second-row-input{
     margin-top: 10px;
     outline: none;
-    width: 150px;
+    width: 145px;
     height: 30px;
-    border:0.5px solid #aaa;
-    border-radius: 2px;
+    padding-left: 2px;
+    border:2px solid 	rgba(170,170,170,0.5);
+    /* border-radius: 2px; */
 }
-.second-row-input:focus{
-    box-shadow: rgba(253, 94, 83, 0.4) 0px 0px 0px 2px;
+.second-row-input:focus,.second-row-input:hover{
+    border:2px solid rgba(253, 94, 83, 0.4);
 
 }
+
 
 input[type='submit']{
     margin-top: 10px;
     border: none;
-   padding: 10px 25px;
+   padding: 10px 28px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
@@ -81,6 +88,7 @@ input[type='submit']:hover {
 }
 
 .third-row{
+    margin-top: 10px;
     display: flex;
    justify-content: space-between;
    align-items: center;
@@ -90,4 +98,57 @@ input[type='submit']:hover {
 .link{
     text-decoration: none !important;
     color: #ec2f22;
+}
+
+@media only screen and (max-width: 1000px) {
+    #avilablilty{
+        /* margin-top: 20px; */
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .availabilityForm{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .first-row{
+        display: block;
+    }
+    .first-row-input{
+        /* margin-right: */
+        width: 100%;
+        margin-bottom: 10px;
+        /* display: inline; */
+
+    }
+    .second-row{
+        display: block;
+    }
+    #check-out{
+        width: 99%;
+    }
+    .second-row-input{
+        width: 100%;
+    }
+   
+    input[type="submit"]{
+        width: 100%;
+    }
+    .third-row{
+        display: block;
+     /* font */
+    }    
+    .third-row p{
+        font-size: 12px;
+    }
+    .third-row a{
+        font-size: 14px;
+        float: right;
+    }
+    
+
+}
+@media only screen and (max-width: 500px) {
+
 }

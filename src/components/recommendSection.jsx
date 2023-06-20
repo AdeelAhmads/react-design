@@ -6,6 +6,8 @@ import r_img_4 from '../assets/img/r_img_4.jpg';
 import p_img_1 from '../assets/img/p_img_1.jpg';
 import p_img_2 from '../assets/img/p_img_2.jpg';
 import { Pagination } from 'swiper';
+import { useState } from 'react';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,6 +16,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const RecommendSection = ()=>{
+    let [numberOfRecommendation, setRecommendation]=useState(2);
+    setInterval(() => {
+        let width=window.screen.width;
+
+        if(width<500){
+             setRecommendation(1);
+        }
+        else{
+            setRecommendation(2);
+        }
+    }, 500);
     return (
         <div className='recommendSection'>
 
@@ -23,7 +36,7 @@ const RecommendSection = ()=>{
                  <Swiper className="container places_container"
                 modules={[Pagination]} 
                 spaceBetween={40}
-                slidesPerView={2}
+                slidesPerView={numberOfRecommendation}
                 pagination={{ clickable: true }}
                 >
                     <SwiperSlide className="place">
@@ -33,8 +46,8 @@ const RecommendSection = ()=>{
                        <div className='place-info'>
                        <h4 className='place-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4> 
                         <small className="place-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta 
-                            odio possimus! Quas sint dignissimos distinctio Quas sint dignissimos distinctio 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta 
+                            odio possimus! Quas sint dignissimos distinctio
                         </small>
                        </div>
                        <div className='btn'>

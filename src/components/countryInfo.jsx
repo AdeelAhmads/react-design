@@ -11,7 +11,8 @@ const CountryInfo=()=>{
                         <h4>Singapur</h4>
                 </section>
 
-                <section className="coutry-detail">
+               <div className='coutry-detail'>
+                 <section className="">
 
                     <div className='coutry-description'>
                         <img src={img_03} alt="" />
@@ -49,6 +50,7 @@ const CountryInfo=()=>{
 
                 </section>
 
+               </div>
              </div>
         </div>
     )

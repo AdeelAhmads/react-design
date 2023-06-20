@@ -1,93 +1,153 @@
-#header{
-    margin: 0px;
-   
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-.main-header{
-    margin-top: 0px;
-    width:100% ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    position:fixed;
-    background-color: white;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;}
-.nav-bar{
-    box-sizing: border-box;
-    font-weight: 400;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+img {
     width: 100%;
-    min-width: 300px;
-   background-color: #fcfefe;
-   margin: 0px;
-
 }
-.brand{
+.main-header {
+    width: 100%;
+    box-sizing: border-box;
+    /* height: 70px; */
     display: flex;
-    height: 100%;
-    justify-content: center;
     align-items: center;
-    background-color: white;
+    justify-content: space-between;
+    /* padding: 0 50px; */
+    background: white;
+}
+.main-header .header-left {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+   
     /* margin-right: 200px; */
 
 }
-.icon{
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
+.main-header .header-left .logo {
+    width: 100px;
+
+    /* margin-right: 200px; */
     margin-left: 200px;
-    margin-right: 5px;
-    background-color: #fd5e53;
+    margin-right: 100px;
+}
+.main-header .header-left nav {
+    margin-left: 50px;
+}
+.main-header .header-left nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.header-btn{
+nav ul li a {
+  
+    display: block;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    /* padding: 5px 10px; */
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left:15px;
 
-   border: none;
-   color: black;
-   padding: 23px 15px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   cursor: pointer;
-   border-right: 1px solid #a2b5d7;
-    
-
+    border-right: 1px solid grey;
+    transition: 0.2s;
 }
-
-.header-btn:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: #fd5e53;
     color: white;
 }
-.hamburger {
-    height: 30px;
-    border: 0.5px solid #fd5e53;
-    margin-left: 20px;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 2px;
+nav .login-signup {
     display: none;
 }
-.hamburger:hover{
-    box-shadow: rgba(253, 94, 83, 0.4) 0px 0px 0px 2px;
-
+.main-header .header-right {
+    display: flex;
+    align-items: center;
 }
-.hamburger  div {
-   
-    width: 20px;
+.main-header .login-signup {
+    color: black;
+    font-weight: bold;
+}
+.main-header .login-signup a {
+    display: inline-block;
+    color: black;
+    background: #4ad295;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.main-header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+    /* box-sizing: border-box; */
+    padding: 5px;
+    margin-top: 5px;
+    border:1px solid #fd5e53;
+    border-radius: 5px;
+}
+.main-header .header-right .hamburger div {
+    width: 30px;
     height: 2px;
     margin: 6px 0;
     background: #fd5e53;
 }
-
 @media only screen and (max-width: 1000px) {
-   
-    .hamburger {
+    .main-header {
+        padding: 0 20px;
+        /* margin-bottom: 20px; */
+    }
+    .main-header .header-right .hamburger {
         display: block;
+    }
+    .main-header .header-left .logo {
+        /* width: 100px; */
+    
+        /* margin-right: 200px; */
+        margin-left: 100px;
+        /* margin-right: 100px; */
+    }
+    .main-header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 120%;
+        height: fit-content;
+        background-color: white;
+        /* padding: 30px; */
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    .main-header .header-left nav.active {
+        z-index: 1000;
+        top: 60px;
+    }
+    .main-header .header-left nav ul {
+        display: block;
+    }
+    nav ul li a {
+        border-right: none;
+        text-align: center;
+        padding-right: 20%;
+        padding-left:0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    .main-header .header-left .logo {
+        /* width: 100px; */
+    
+        /* margin-right: 200px; */
+        margin-left: 50px;
+        /* margin-right: 100px; */
     }
 }
