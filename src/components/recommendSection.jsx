@@ -28,7 +28,7 @@ const RecommendSection = ()=>{
         }
     }, 500);
     return (
-        <div className='recommendSection'>
+        <div id='recommend' className='recommendSection'>
 
             <div className='main-section'>
 

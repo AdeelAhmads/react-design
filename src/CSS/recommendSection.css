@@ -37,7 +37,8 @@
     font-size: 18px;
 }
 .recommend-header > p{
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 12px;
     margin-top: -10px;
     color: #F5F5F5;

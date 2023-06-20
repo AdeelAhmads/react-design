@@ -26,6 +26,7 @@
     
 }
 .first-row-input{
+    padding-left: 5px;
     outline: none;
     width: 200px;
     height: 30px;

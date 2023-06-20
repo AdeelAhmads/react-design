@@ -1,5 +1,6 @@
 import '../CSS/header.css';
 import logo from '../logo.png'
+
 const Header=()=>{
 
    
@@ -17,19 +18,19 @@ const Header=()=>{
             <div className="logo">
                 <img src={logo} alt="" />
             </div>
-            <nav>
+            <nav className='header-nav'>
                 <ul>
                     <li>
-                        <a href="" className="active">HOME</a>
+                        <a href="#avilablilty" className="active">HOME</a>
                     </li>
                     <li>
-                        <a href="">PORTFOLIO</a>
+                        <a href="#recommend">PORTFOLIO</a>
                     </li>
                     <li>
-                        <a href="">BLOG ENTRIES</a>
+                        <a href="#coutryInfo">BLOG ENTRIES</a>
                     </li>
                     <li>
-                        <a href="">CONTACT US</a>
+                        <a href="#message-section">CONTACT US</a>
                     </li>
                    
                 </ul>
@@ -44,6 +45,9 @@ const Header=()=>{
             </div>
         </div>
     </header>
+
+    
+
         </div>
     )
 }
